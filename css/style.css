@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+/* Start Header*/
+header {
+    background-color: #2D4A22;
+    padding: 2rem 0rem 10rem;
+    text-align: center;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 100;
+}
+/* End Header*/
+
+/* Start Balance*/
+#balance {
+    margin-top: -8rem;
+}
+
+#balance h2 {
+    color: #fff;
+}
+/* End Balance*/
+
+/* Start Footer*/
+footer {
+    text-align: center;
+}
+/* End Footer*/
