@@ -119,6 +119,12 @@ header {
 /* End Cards*/
 
 /* Start Table*/
+#transaction {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
@@ -175,5 +181,15 @@ footer {
 /* End Footer*/
 
 /* Start Responsive*/
+@media (min-width: 800px){
+    html {
+        font-size: 87.8%;
+    }
 
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
 /* End Responsive*/
