@@ -1,6 +1,9 @@
 /* Start Global */
 :root {
     --dark-blue: #363f5f;
+    --green: #49aa26;
+    --light-green: #3dd705;
+    --red: #e92929;
 }
 
 * {
@@ -51,17 +54,48 @@ h2 {
 
 /* Start links and buttons */
 a {
-    color: #49aa26;
+    color: var(--green);
     text-decoration: none;
 }
 
 a:hover {
-    color: #3dd705;
+    color: var(--light-green);
 }
 
 .button.new {
     display: inline-block;
     margin-bottom: .8rem;
+}
+
+button {
+    width: 40% ;
+    height: 50px;
+    border: none;
+    color: #fff;
+    background: var(--green);
+    padding: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--light-green);
+}
+
+.button.cancel {
+    color: var(--red);
+    border: 2px var(--red) solid;
+    border-radius: 0.25rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    opacity: 0.6;
+}
+
+.button.cancel:hover {
+    opacity: 1;
 }
 /* End links and buttons */
 
@@ -113,7 +147,7 @@ header {
 }
 
 .card.total {
-    background-color: #29aa26;
+    background-color: var(--green);
     color: white;
 }
 /* End Cards*/
@@ -194,9 +228,43 @@ td.expense {
     background: #f0f2f5;
     padding: 2.4rem;
     position: relative;
-
+    width: 90%;
+    max-width: 500px;
 }
 /* End Modal*/
+
+/* Start Form*/
+#form {
+    max-width: 500px;
+}
+
+#form h2{
+    margin-top: 0;
+
+}
+
+#form form input {
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 0.8rem;
+
+}
+
+.input-group small {
+    opacity: 0.4;
+}
+
+.input-group.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* End Form*/
 
 /* Start Footer*/
 footer {
