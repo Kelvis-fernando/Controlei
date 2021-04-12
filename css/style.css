@@ -215,8 +215,8 @@ td.expense {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal-overlay.active {
@@ -239,11 +239,11 @@ td.expense {
 }
 
 #form h2{
-    margin-top: 0;
-
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
-#form form input {
+input {
     border: none;
     border-radius: 0.2rem;
     padding: 0.8rem;
